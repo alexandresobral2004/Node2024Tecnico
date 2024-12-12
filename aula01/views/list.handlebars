@@ -1,0 +1,23 @@
+<h2>Lista de Contatos</h2>
+<table class="table table-striped w-70">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">Fone</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each contatos}}
+      <tr>
+        <th>{{this.id}}</th>
+        <td>{{this.nome}}</td>
+        <td>{{this.email}}</td>
+        <td>{{this.telefone}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<a href="/contato/novo"><input type="submit" class="btn btn-primary" value="Novo Contato"></a>
