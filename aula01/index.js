@@ -28,21 +28,6 @@ app.use(express.json())
 
 
 
-// Define User model
-// class Contato extends Model { }
-// Contato.init({
-//   name: DataTypes.STRING,
-//   email: DataTypes.STRING,
-//   password: DataTypes.STRING
-// }, { sequelize, modelName: 'Contato' });
-
-
-
-// app.get('/contato', (req, res) => {
-//   res.render('contato')
-// })
-
-
 //adicionando rota User
 app.use('/contato', ContatoRouter)
 
