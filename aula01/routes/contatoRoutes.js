@@ -1,4 +1,3 @@
-// ./routes/contatoRoutes.js
 import express from 'express';
 import Contato from '../model/Contato.js';
 

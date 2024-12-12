@@ -1,10 +1,8 @@
 import express from 'express'
 import { create } from 'express-handlebars';
-import { Model, DataTypes } from 'sequelize';
-import sequelize from './db/conn.js';
 import conn from './db/conn.js';
 import ContatoRouter from './routes/contatoRoutes.js';
-import Contato from './model/Contato.js';
+
 
 const app = express()
 const port = 3000
@@ -24,10 +22,6 @@ app.use(
   })
 )
 app.use(express.json())
-
-
-
-
 //adicionando rota User
 app.use('/contato', ContatoRouter)
 
@@ -47,7 +41,4 @@ conn
   .catch((err) => {
     console.log(err)
   })
-// app.listen(port, () => {
-//   console.log('Server Started')
-// }
 
